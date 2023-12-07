@@ -1,12 +1,13 @@
+/* eslint-disable no-unused-vars */
 import { CarouselWrapper } from "react-pretty-carousel";
 import image1 from "./../../assets/rectangle-15.png";
 import image2 from "./../../assets/rectangle-16.png";
 import image3 from "./../../assets/rectangle-17.png";
 import image4 from "./../../assets/rectangle-26.png";
-import { FaReact } from "react-icons/fa";
 import Card from "./../../components/Card";
-import { IoMedicalOutline } from "react-icons/io5";
-import { LuBrain } from "react-icons/lu";
+import Slider from "../../components/Slider";
+// import Slider from "../../components/Slider";
+
 const images = [
 	{ src: image2, title: "Interior 1" },
 	{ src: image1, title: "Interior 2" },
@@ -19,7 +20,10 @@ const Home = () => {
 		<div className="max-w-screen-2xl mx-auto">
 			<div>
 				<div className="pb-16 flex items-center w-[95%]">
-					<h2 className="font-author font-semibold w-[70%] text-custom">
+					<h2
+						className="font-author font-semibold w-[60%] text-custom uppercase"
+						style={{ lineHeight: "1.2" }}
+					>
 						Comprehensive Interior
 						<strong> Design Services</strong>
 					</h2>
@@ -43,8 +47,8 @@ const Home = () => {
 
 			<div>
 				<div className="pb-16 flex items-center w-[70%] mt-14">
-					<h2 className="font-author font-bold w-[50%] text-5xl">
-						Quality full medical services for patients.
+					<h2 className="font-author font-bold w-[70%] text-6xl uppercase">
+						Quality full medical services for patients
 					</h2>
 				</div>
 				<div className="carousel w-full h-[720px]">
@@ -57,6 +61,8 @@ const Home = () => {
 							icon="genderAndrogyne"
 							title="Cardiology"
 							description="Pharmacies are committed to making health care accessible and affordable for all. They emphasize the importance of health checkups."
+							additionalText="More about checkup"
+							slideNumber={1}
 						/>
 						<Card
 							icon="medicalOutline"
@@ -86,6 +92,8 @@ const Home = () => {
 							icon="genderAndrogyne"
 							title="Cardiology"
 							description="Pharmacies are committed to making health care accessible and affordable for all. They emphasize the importance of health checkups."
+							additionalText="More about checkup"
+							slideNumber={2}
 						/>
 						<Card
 							icon="medicalOutline"
@@ -115,6 +123,8 @@ const Home = () => {
 							icon="genderAndrogyne"
 							title="Cardiology"
 							description="Pharmacies are committed to making health care accessible and affordable for all. They emphasize the importance of health checkups."
+							additionalText="More about checkup"
+							slideNumber={3}
 						/>
 						<Card
 							icon="medicalOutline"
@@ -144,6 +154,8 @@ const Home = () => {
 							icon="genderAndrogyne"
 							title="Cardiology"
 							description="Pharmacies are committed to making health care accessible and affordable for all. They emphasize the importance of health checkups."
+							additionalText="More about checkup"
+							slideNumber={4}
 						/>
 						<Card
 							icon="medicalOutline"
@@ -166,6 +178,25 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div>
+				<div className="pb-16 w-[95%]">
+					<h2
+						className="font-author font-semibold w-[60%] uppercase text-custom"
+						style={{ lineHeight: "1.2" }}
+					>
+						Our Works of Art:
+						<strong> Unfolding Design stories</strong>
+					</h2>
+					<p className="font-medium text-lg mb-4 pt-3 w-[40%]">
+						Solli lobortis risus eget iaculis tincidunt placerat
+						neque nisi. Aliquam at nibh mauris facilisis in sed
+						aliquet. Feugiat massa mollis commodo sed sagittis
+						vestibulum libero diam id.
+					</p>
+				</div>
+				<Slider />
 			</div>
 		</div>
 	);
