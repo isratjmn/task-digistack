@@ -1,0 +1,49 @@
+
+@media only screen and (max-width: 767px) {
+	.pb-16 {
+		padding-bottom: 1rem; 
+	}
+
+	.w-[95%] {
+		width: 95%; 
+	}
+
+	.carousel-item {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.carousel-title {
+		font-size: 14px; 
+	}
+
+	.carousel-image {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.pb-16 {
+		padding-bottom: 2rem; 
+	}
+
+	.w-[95%] {
+		width: 95%; 
+	}
+
+	.carousel-item {
+		width: 50%; 
+		margin-right: 1rem;
+	}
+
+	.carousel-title {
+		font-size: 16px; 
+	}
+
+	.carousel-image {
+		width: 100%;
+		height: auto;
+	}
+}

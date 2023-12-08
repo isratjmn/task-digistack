@@ -6,7 +6,7 @@ import image3 from "./../../assets/rectangle-17.png";
 import image4 from "./../../assets/rectangle-26.png";
 import Card from "./../../components/Card";
 import Slider from "../../components/Slider";
-// import Slider from "../../components/Slider";
+import "./Home.css";
 
 const images = [
 	{ src: image2, title: "Interior 1" },
@@ -28,7 +28,6 @@ const Home = () => {
 						<strong> Design Services</strong>
 					</h2>
 				</div>
-
 				<CarouselWrapper items={3} mode="gallery" showControls={true}>
 					{images.map((image, index) => (
 						<div key={index} className="carousel-item">
@@ -44,10 +43,9 @@ const Home = () => {
 					))}
 				</CarouselWrapper>
 			</div>
-
 			<div>
 				<div className="pb-16 flex items-center w-[70%] mt-14">
-					<h2 className="font-author font-bold w-[70%] text-6xl uppercase">
+					<h2 className="font-author font-bold w-[70%] text-5xl uppercase">
 						Quality full medical services for patients
 					</h2>
 				</div>
@@ -167,7 +165,6 @@ const Home = () => {
 							title="Gynecology"
 							description="Pharmacies are committed to making health care accessible vulputate."
 						/>
-
 						<div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
 							<a href="#slide3" className="btn btn-circle mr-5">
 								❮
